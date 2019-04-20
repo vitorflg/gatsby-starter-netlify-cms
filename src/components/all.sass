@@ -5,6 +5,8 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
+$dark-red: #a33100
+$red: #D64000
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
@@ -73,10 +75,12 @@ $black: #2b2523
 
 .navbar-item .icon
   color: $primary
+
 // Override for use of svg's from https://simpleicons.org/
+
 .icon svg
-  width: 1.5rem
-  height: 1.5rem
+  width: 2rem
+  height: 2rem
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
@@ -113,3 +117,67 @@ $menu-label-color: $white-ter
     display: inline
 
 @import "~bulma"
+
+html, body
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 400
+
+.navbar-item img
+  max-height: 2.5rem
+
+a.navbar-item:hover, a.navbar-item.is-active
+  color: black
+
+article
+  box-shadow: 0 8px 16px rgba(0,0,0, 0.1) !important
+  border-radius: 1rem
+
+article:hover
+  box-shadow: 0 16px 16px rgba(0,0,0, 0.1)
+  -webkit-transform: translateY(-4px)
+  transform: translateY(-4px)
+
+.main-button
+  background: black !important
+  width: 6rem
+  font-size: 0.94rem
+  border-radius: 99rem
+
+.main-button:hover
+  background: #0e141a !important
+
+.container form input
+  height: 3.5rem !important
+  border-radius: 0
+
+.container form textarea
+  border-radius: 0
+
+.tags
+  display: flex
+  max-width: 30rem
+  margin: 0 auto 2rem auto
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  align-items: center
+
+.tags span
+  padding: 0.3rem 1rem
+  margin: 0 1rem 1rem 0
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
+  color: black
+  cursor: pointer
+  border-radius: 99rem
+
+.tags span.is-active
+  background-color: $red
+  color: white
+  background-image: none
+
+.section
+  padding: 1.5rem
+
+.input:active, .input:focus, .textarea:active, .textarea:focus
+  border-color: black
+  box-shadow: none

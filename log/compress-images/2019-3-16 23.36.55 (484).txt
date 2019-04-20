@@ -1,0 +1,7 @@
+File from: [src/img/source/**/*.{jpg,JPG,jpeg,JPEG,gif,png,svg}]
+
+File to: [-]
+
+Compression algorithm: [-]
+
+Description:  Directory don't not have files!: 

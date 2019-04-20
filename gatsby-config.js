@@ -2,7 +2,7 @@ var proxy = require("http-proxy-middleware")
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'A simple blog',
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
@@ -16,6 +16,15 @@ module.exports = {
         path: `${__dirname}/static/img`,
         name: 'uploads',
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `open sans`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ]
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',

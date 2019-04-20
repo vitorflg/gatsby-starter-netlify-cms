@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import contactImg from "../../../static/img/contact.jpg"
 
 function encode(data) {
   return Object.keys(data)
@@ -37,9 +38,9 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section">
+          <img width="600rem" style={{margin: 'auto', display: 'block', maxWidth: '600rem'}} src={contactImg} alt=""/>
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +59,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Como você se chama ?
                   </label>
                   <div className="control">
                     <input
@@ -73,7 +74,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    Email
+                    Qual e-mail ?
                   </label>
                   <div className="control">
                     <input
@@ -88,7 +89,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
-                    Message
+                    Envie sua mensagem e retornaremos em até 24h
                   </label>
                   <div className="control">
                     <textarea
@@ -101,8 +102,8 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
-                    Send
+                  <button className="button main-button is-link" type="submit">
+                    Enviar
                   </button>
                 </div>
               </form>
